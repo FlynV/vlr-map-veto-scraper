@@ -1,0 +1,6 @@
+                                  𝗩𝗔𝗟𝗢𝗥𝗔𝗡𝗧 𝗠𝗔𝗣 𝗩𝗘𝗧𝗢 𝗦𝗖𝗥𝗔𝗣𝗘𝗥
+                                         v1.0.0
+                               Author: (@FlynVAL) on Twitter
+      Read the documentation in order to use the script, and head to release to download it. 
+                                 Pull Requests are welcome!
+  
