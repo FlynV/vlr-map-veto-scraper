@@ -72,6 +72,8 @@ In the example above, FNATIC's team ID is 2593.
 
 3. Press enter and give it a bit to generate a CSV file.
 
+4. Please let the script finish so it closes the selenium driver itself, if not finished or closed aburptly: make sure to close all Mozilla tasks through task manager. 
+
 
 ## Contributing
 
