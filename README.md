@@ -10,10 +10,9 @@
     Tired of going through VLR matches to find out what's a team weak map? Or their strong map? This tool does it AUTOMATICALLY.
     <br/>
     <br/>
-    <a href="https://github.com/FlynV/vlr-map-veto-scraper"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/FlynV/vlr-map-veto-scraper">View Demo</a>
+    <a href="https://github.com/FlynV/vlr-map-veto-scraper/releases">Download Executable</a>
     .
     <a href="https://github.com/FlynV/vlr-map-veto-scraper/issues">Report Bug</a>
     .
@@ -21,19 +20,21 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/FlynV/vlr-map-veto-scraper/total) ![Contributors](https://img.shields.io/github/contributors/FlynV/vlr-map-veto-scraper?color=dark-green) ![Forks](https://img.shields.io/github/forks/FlynV/vlr-map-veto-scraper?style=social) ![Stargazers](https://img.shields.io/github/stars/FlynV/vlr-map-veto-scraper?style=social) ![Issues](https://img.shields.io/github/issues/FlynV/vlr-map-veto-scraper) ![License](https://img.shields.io/github/license/FlynV/vlr-map-veto-scraper) 
+![License](https://img.shields.io/github/license/FlynV/vlr-map-veto-scraper) 
 
-## About The Project
+## About
 
 As an assistant coach, I found it tedious to go through an opponent team's matches to find their weak map and their strong map. So I created this tool that scrapes recent (25 to 50) games veto from VLR.GG.
 The tool gets first map bans and first map picks, and it is open source, so feel free to expand it.  
+
+Head to Releases Tab to download an excutable, or proceed below.
 
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Requirements
 
 To get started with the code on this repo, you need to either clone or download this repo into your machine as shown below;
 
@@ -48,10 +49,9 @@ pip3 install -r requirements.txt
 ```
 
 
-
 ## Usage
 
-1. Run the script.
+1. Run the script. (following instructions below or just running the executable from Releases Tab.)
 
 ```sh
 py map.py
