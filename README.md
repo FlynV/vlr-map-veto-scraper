@@ -20,7 +20,7 @@
   </p>
 </p>
 
-![License](https://img.shields.io/github/license/FlynV/vlr-map-veto-scraper) 
+
 
 ## About
 
