@@ -67,7 +67,7 @@ def doForEachGame(i):
      
     driver.back()
  
-while i < 25: #Change this to 50 if you'd like to do recent 50, DO NOT GO BEYOND 50.
+while i < 26: #Change this to 50 if you'd like to do recent 50, DO NOT GO BEYOND 50.
     i = i + 1
     doForEachGame(i)
 
