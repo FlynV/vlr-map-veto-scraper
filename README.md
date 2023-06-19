@@ -34,6 +34,11 @@ Head to Releases Tab to download an excutable, or proceed below.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+## Demo 
+
+<img src="images/demo.svg" alt="Logo" width="1200" height="800">
+
+
 ### Requirements
 
 To get started with the code on this repo, you need to either clone or download this repo into your machine as shown below;
