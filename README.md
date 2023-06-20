@@ -24,8 +24,8 @@
 
 ## About
 
-As an assistant coach, I found it tedious to go through an opponent team's matches to find their weak map and their strong map. So I created this tool that scrapes recent (25 to 50) games veto from VLR.GG.
-The tool gets first map bans and first map picks, and it is open source, so feel free to expand it.  
+As an assistant coach, I found it tedious to go through an opponent team's matches to find their weak map and their strong map. So I created this tool that scrapes recent games veto from VLR.GG.
+The tool gets first map bans and first map picks, and it is open source, so feel free to expand it. **Update** (Now go through all pages) 
 
 Head to Releases Tab to download an excutable, or proceed below.
 
