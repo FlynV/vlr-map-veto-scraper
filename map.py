@@ -10,9 +10,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver import ActionChains
 from selenium.common.exceptions import NoSuchElementException
 
-
-print(f"{open('extra/welcome.txt', encoding='UTF-8').read()}\n\n") #Welcomes user.
-
 veto = []
 bans = []
 picks = []
@@ -25,21 +22,10 @@ driver = webdriver.Firefox(options=options)
 
 teamId = input("Enter TeamID from VLR.GG: ")
 
+games = int(input("How many games would you like to scrape: ")
+pages = ((games - 1) // 50) + 1
 
-driver.get("https://www.vlr.gg/team/matches/" + teamId)
-
-
-wait = WebDriverWait(driver, 30)
-
-teamNametoShow = driver.find_element(By.XPATH, "//*[@id='wrapper']/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/h1").text
-teamName= driver.find_element(By.XPATH, "//*[@id='wrapper']/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/h2").text
-print("Getting " + teamNametoShow + " first map bans & picks... this might take a bit.")
-
-print("Note: this will scrape recent 25 games, max is 50 using the open source file")
-
-
-
-i=0
+print(pages)
 
 def doForEachGame(i): 
     btn = driver.find_element(By.XPATH, f"//*[@id='wrapper']/div[1]/div/div[3]/div[{i}]/a/div[1]").click()
@@ -66,12 +52,23 @@ def doForEachGame(i):
        print("Found a game with no veto, proceeding to next game...")
      
     driver.back()
- 
-while i < 26: #Change this to 50 if you'd like to do recent 50, DO NOT GO BEYOND 50.
+
+for page in range(pages):
+
+  driver.get("https://www.vlr.gg/team/matches/" + teamId + "?page=" + str(page + 1))
+
+
+  wait = WebDriverWait(driver, 30)
+
+  teamNametoShow = driver.find_element(By.XPATH, "//*[@id='wrapper']/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/h1").text
+  teamName= driver.find_element(By.XPATH, "//*[@id='wrapper']/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/h2").text
+  print("Getting " + teamNametoShow + " first map bans & picks... this might take a bit.")
+
+  i=0
+
+  while page * 50 + i < games and i < 50:
     i = i + 1
     doForEachGame(i)
-
-
 
 finalBans = {}
 
@@ -100,12 +97,4 @@ print(finalResult)
 finalResult.to_csv(teamName + " Veto.csv", encoding='utf-8', index=False)
 print("A csv file has been exported, close now...")
     
-    
-
-
 driver.quit()
-
-
-
-
-
