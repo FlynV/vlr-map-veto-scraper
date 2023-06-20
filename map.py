@@ -22,7 +22,7 @@ driver = webdriver.Firefox(options=options)
 
 teamId = input("Enter TeamID from VLR.GG: ")
 
-games = 60
+games = int(input("How many games would you like to scrape: ")
 pages = ((games - 1) // 50) + 1
 
 print(pages)
